@@ -1,10 +1,14 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-const servicoController = require("../Controller/servicos");
+const ServicoController = require("../Controller/servicos/ServicoController");
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send(servicoController.listarServicos());
-});
+router.get("/", ServicoController.listar);
+
+router.get("/:id",ServicoController.buscar)
+router.post("/", ServicoController.criarUmServico);
+
+router.put("/:id", ServicoController.editarUmServico);
+
+router.delete("/:id", ServicoController.deletarUmServico);
 
 module.exports = router;

@@ -1,12 +1,12 @@
 [
+  { "id": "1", 
+    "nome": "Banho", 
+    "preco": "R$50.00" },
+  { "id": "2", "nome": "Tossa", "preco": "R$15,00" },
   {
-    "id": "1",
-    "nome": "Banho",
-    "preço": "R$50,00"
-  },
-  {
-    "id": "2",
-    "nome": "Tossa",
-    "preço": "R$15,00"
+    "id": "2060e2bb-6385-4d17-9fcd-a49a9a50bc29",
+    "nome": "Tossa Higiênica",
+    "deleted": false,
+    "preco": "R$5.00"
   }
 ]
