@@ -11,7 +11,11 @@ const ServicosModel = {
     servicos.push(servico);
     fs.writeFileSync("./database/servicos.json", JSON.stringify(servicos));
   },
-  update:()=>{
+  update:(servicoEncontrado,nome,preco)=>{
+
+    servicoEncontrado.nome = nome;
+    servicoEncontrado.preco = preco;
+    
   fs.writeFileSync("./database/servicos.json", JSON.stringify(servicos));
   },
   destroy:(id)=>{

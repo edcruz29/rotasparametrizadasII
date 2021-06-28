@@ -34,10 +34,8 @@ const ServicosController = {
       return res.status(400).json({ mensagem: "Serviço Desconhecido" });
     }
 
-    servicoEncontrado.nome = nome;
-    servicoEncontrado.preco = preco;
 
-    ServicosModel.update(servicoEncontrado);
+    ServicosModel.update(servicoEncontrado, nome, preco);
 
     return res.json(servicoEncontrado);
   },
