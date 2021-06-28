@@ -1,4 +1,4 @@
-const  listarPets = require('./listarPets')
-const listarUm = require("./listarUmPet")
+const listarPets = require("./listarPets");
+const listarUm = require("./listarUmPet");
 
-module.exports = {listarPets, listarUm};
+module.exports = { listarPets, listarUm };

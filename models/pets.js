@@ -1,5 +1,4 @@
-const  listaDePets  = require("../database/pets.json");
-
+const listaDePets = require("../database/pets.json");
 
 exports.retornaListaDePets = () => listaDePets;
 

@@ -4,7 +4,7 @@ const ServicoController = require("../Controller/servicos/ServicoController");
 
 router.get("/", ServicoController.listar);
 
-router.get("/:id",ServicoController.buscar)
+router.get("/:id", ServicoController.buscar);
 router.post("/", ServicoController.criarUmServico);
 
 router.put("/:id", ServicoController.editarUmServico);
